@@ -6,9 +6,7 @@ public class BitCounting {
     and returns the number of bits that are equal to one in the binary representation of that number.
     You can guarantee that input is non-negative. */
     public static int countBits(int n){
-        int count = 0;
-        for(char c : Integer.toBinaryString(n).toCharArray()) if(c == '1') count++;
-        return count;
+        return Integer.bitCount(n);
     }
 
     public static void main(String[] args){
